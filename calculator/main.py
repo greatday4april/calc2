@@ -19,3 +19,11 @@ class Calculator:
         """ multiply two numbers and store the result"""
         self.result = value_a * value_b
         return self.result
+
+    def divide_numbers(self, value_a, value_b):
+        """ multiply two numbers and store the result"""
+        if value_b == 0:
+            raise ValueError("Division by zero is forbidden")
+
+        self.result = value_a / value_b
+        return self.result
