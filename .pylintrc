@@ -88,6 +88,8 @@ disable=raw-checker-failed,
         use-symbolic-message-instead,
         missing-function-docstring,
         missing-class-docstring,
+        missing-module-docstring,
+        line-too-long,
         too-few-public-methods,
         redefined-outer-name,
         unused-argument

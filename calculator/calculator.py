@@ -1,12 +1,11 @@
 """ This is the increment function"""
 
+from typing import List
 from calc.addition import Addition
 from calc.calculation import Calculation
 from calc.division import Division
 from calc.subtraction import Subtraction
 from calc.multiplication import Multiplication
-
-from typing import List
 
 
 class Calculator:
