@@ -46,10 +46,6 @@ class Calculator:
         return len(Calculator.history)
 
     @staticmethod
-    def get_result_of_first_calculation_added_to_history():
-        return Calculator.history[0].get_result()
-
-    @staticmethod
     def add_number(value_a, value_b):
         """ adds number to result"""
         addition = Addition.create(value_a, value_b)
