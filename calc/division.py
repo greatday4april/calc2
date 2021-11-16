@@ -6,4 +6,7 @@ class Division(Calculation):
     the calculation parent class"""
 
     def get_result(self):
-        return self.value_a / self.value_b
+        output = 1.0
+        for value in self.values:
+            output /= value
+        return output

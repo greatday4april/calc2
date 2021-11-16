@@ -6,5 +6,7 @@ class Multiplication(Calculation):
     the calculation parent class"""
 
     def get_result(self):
-        # you need to use self to reference the data contained in the instance of the object.  This is encapsulation
-        return self.value_a * self.value_b
+        output = 1.0
+        for value in self.values:
+            output *= value
+        return output

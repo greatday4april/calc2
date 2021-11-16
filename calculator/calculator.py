@@ -46,29 +46,29 @@ class Calculator:
         return len(Calculator.history)
 
     @staticmethod
-    def add_number(value_a, value_b):
+    def add_number(values):
         """ adds number to result"""
-        addition = Addition.create(value_a, value_b)
+        addition = Addition.create(values)
         Calculator.add_calculation_to_history(addition)
         return Calculator.get_last_calculation_result()
 
     @staticmethod
-    def subtract_number(value_a, value_b):
+    def subtract_number(values):
         """ subtract number from result"""
-        subtraction = Subtraction.create(value_a, value_b)
+        subtraction = Subtraction.create(values)
         Calculator.add_calculation_to_history(subtraction)
         return Calculator.get_last_calculation_result()
 
     @staticmethod
-    def multiply_numbers(value_a, value_b):
+    def multiply_numbers(values):
         """ multiply two numbers and store the result"""
-        multiplication = Multiplication.create(value_a, value_b)
+        multiplication = Multiplication.create(values)
         Calculator.add_calculation_to_history(multiplication)
         return Calculator.get_last_calculation_result()
 
     @staticmethod
-    def divide_numbers(value_a, value_b):
+    def divide_numbers(values):
         """ divide two numbers and store the result"""
-        division = Division.create(value_a, value_b)
+        division = Division.create(values)
         Calculator.add_calculation_to_history(division)
         return Calculator.get_last_calculation_result()
