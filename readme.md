@@ -28,5 +28,7 @@ Read from CSV file and perform test:
 <img width="1057" alt="Screen Shot 2021-12-01 at 11 50 30 AM" src="https://user-images.githubusercontent.com/60717299/144320178-4df43bbc-fb21-4d18-b6b8-1e4338b61bc4.png">
 
 
-## File moved to done folder after finish!
-[Uploading Screen Shot 2021-12-01 at 11.52.17 AM.png…]()
+## File moved to done folder after finish
+
+<img width="494" alt="Screen Shot 2021-12-01 at 11 52 17 AM" src="https://user-images.githubusercontent.com/60717299/144320377-ecd1b76d-9b97-497d-a7d8-63056c054bfc.png">
+
