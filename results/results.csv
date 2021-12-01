@@ -1,0 +1,16 @@
+unix time stamp, filename, record number, operation and result of the calculation
+1638395531.386423,test.csv,1,addition,7.0
+1638395531.387405,test.csv,2,addition,11.0
+1638395531.387939,test.csv,3,addition,7.7
+1638395531.38856,test.csv,4,addition,6.0
+1638395531.389482,test.csv,5,subtraction,-4.0
+1638395531.390393,test.csv,6,subtraction,-1.0
+1638395531.391019,test.csv,7,subtraction,-1.7999999999999998
+1638395531.391761,test.csv,8,subtraction,1.7999999999999998
+1638395531.392573,test.csv,9,multiplication,2.0
+1638395531.393858,test.csv,10,multiplication,6.0
+1638395531.395208,test.csv,11,multiplication,10.0
+1638395531.396593,test.csv,12,multiplication,-13.42
+1638395531.397784,test.csv,13,division,0.5
+1638395531.398744,test.csv,14,division,0.125
+1638395531.399924,test.csv,15,division,4.0

@@ -1,0 +1,18 @@
+Record Number,First Value,Second Value,Expected Result,Operation Type
+1,3,4,7,addition
+2,5,6,11,addition
+3,3.5,4.2,7.7,addition
+4,2.8,3.2,6.0,addition
+5,1,3,-4,subtraction
+6,-2,3,-1,subtraction
+7,-1.5,3.3,-1.8,subtraction
+8,1.5,-3.3,1.8,subtraction
+9,1,2,2,multiplication
+10,2,3,6,multiplication
+11,2.5,4,10.0,multiplication
+12,2.2,-6.1,-13.42,multiplication
+13,2,1,0.5,division
+14,2,4,0.125,division
+15,0.125,2,4.0,division
+16,2,0,NaN,division
+17,2,0,NaN,unknown
