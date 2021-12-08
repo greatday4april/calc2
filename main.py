@@ -1,9 +1,10 @@
-import os
-import pandas as pd
-from pathlib import Path
 import datetime
-from calculator.calculator import Calculator
+import os
+from pathlib import Path
 import shutil
+import pandas as pd
+
+from calculator.calculator import Calculator
 
 
 def absolutepath(filepath):
@@ -12,7 +13,7 @@ def absolutepath(filepath):
 
 
 if __name__ == "__main__":
-    files = os.listdir('input')
+    FILES = os.listdir('input')
     print("Calculator main test is running")
     open(absolutepath('results/results.csv'), 'w+').write(
         'unix time stamp, filename, record number, operation and result of the calculation\n'
@@ -20,7 +21,7 @@ if __name__ == "__main__":
     open(absolutepath('results/errors.csv'), 'w+').write(
         'filename, record number, error message\n'
     )
-    for f in files:
+    for f in FILES:
         if not f.endswith('.csv'):
             continue
 
@@ -54,13 +55,13 @@ if __name__ == "__main__":
                         result,
                     )
                 )
-            except Exception as e:
+            except Exception as error:
 
                 open(absolutepath('results/errors.csv'), 'a').write(
                     "{},{},{}\n".format(
                         f,
                         row["Record Number"],
-                        e,
+                        error,
                     )
                 )
         shutil.move(absolutepath('input/' + f), absolutepath('done/' + f))
