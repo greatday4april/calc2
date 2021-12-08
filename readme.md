@@ -32,3 +32,7 @@ Read from CSV file and perform test:
 
 <img width="494" alt="Screen Shot 2021-12-01 at 11 52 17 AM" src="https://user-images.githubusercontent.com/60717299/144320377-ecd1b76d-9b97-497d-a7d8-63056c054bfc.png">
 
+## pylint and code coverage
+
+<img width="1065" alt="Screen Shot 2021-12-07 at 7 31 51 PM" src="https://user-images.githubusercontent.com/60717299/145144344-03dc0448-dc9f-4131-96b3-97484a1ea275.png">
+
