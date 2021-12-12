@@ -1,0 +1,3 @@
+filename, record number, error message
+test.csv,16,float division by zero
+test.csv,17,unsupported operation type: unknown
