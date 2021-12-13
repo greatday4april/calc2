@@ -2,7 +2,7 @@ from flask import Flask, render_template, flash, request
 from calculator.calculator import Calculator
 
 app = Flask(__name__, template_folder="templates")
-app.secret_key = "super secret key"
+app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 
 
 @app.route("/", methods=["GET"])

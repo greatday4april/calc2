@@ -3,3 +3,4 @@ pytest
 pycodestyle
 pytest-pylint
 Flask==2.0.2
+uWSGI~=2.0.20
