@@ -2,12 +2,12 @@
 
 from pathlib import Path
 from typing import List
+from datetime import datetime
 from calc.addition import Addition
 from calc.calculation import Calculation
 from calc.division import Division
 from calc.subtraction import Subtraction
 from calc.multiplication import Multiplication
-from datetime import datetime
 
 
 class Calculator:
@@ -20,7 +20,9 @@ class Calculator:
     @staticmethod
     def load_history():
         Calculator.history = []
-        lines = open(Calculator.HISTORY_FILE_PATH, "r").readlines()
+        with open(Calculator.HISTORY_FILE_PATH, "r", encoding="UTF-8") as file:
+            lines = file.readlines()
+
         lines = [line.strip() for line in lines if len(line.strip()) != 0]
         for line in lines:
             values_str, operation, result, time = line.split(";")
@@ -34,7 +36,7 @@ class Calculator:
             elif operation == "Division":
                 calc = Division.create(values)
             else:
-                raise Exception("unsupported operation type: {}".format(operation))
+                raise Exception(f"unsupported operation type: {operation}")
 
             calc.result = result
             calc.time = datetime.fromisoformat(time)
@@ -55,8 +57,8 @@ class Calculator:
     @staticmethod
     def add_calculation_to_history(calculation: Calculation):
         Calculator.history.append(calculation)
-        with open(Calculator.HISTORY_FILE_PATH, "a") as f:
-            f.write(calculation.to_str() + "\n")
+        with open(Calculator.HISTORY_FILE_PATH, "a", encoding="UTF-8") as file:
+            file.write(calculation.to_str() + "\n")
 
     @staticmethod
     def get_last_calculation_result():
@@ -69,11 +71,13 @@ class Calculator:
     @staticmethod
     def clear_history():
         Calculator.history.clear()
+        with open(Calculator.HISTORY_FILE_PATH, "a", encoding="UTF-8") as file:
+            file.truncate()
 
     @staticmethod
     def get_history_count():
-        with open(Calculator.HISTORY_FILE_PATH, "w") as f:
-            f.truncate()
+        with open(Calculator.HISTORY_FILE_PATH, "w", encoding="UTF-8") as file:
+            file.truncate()
         return len(Calculator.history)
 
     @staticmethod

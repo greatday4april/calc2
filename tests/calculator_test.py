@@ -89,10 +89,23 @@ def test_calculator_subtract(clear_history):
 
 
 def test_calculator_multiply(clear_history):
-    """ tests multiplication of two numbers"""
+    """tests multiplication of two numbers"""
     assert Calculator.multiply_numbers((1, 2)) == 2
 
 
 def test_calculator_divide(clear_history):
-    """ tests division of two numbers"""
+    """tests division of two numbers"""
     assert Calculator.divide_numbers((4, 5)) == 0.05
+
+
+def test_calculator_load_history(clear_history):
+    """Testing the history loading of calculator"""
+    Calculator.load_history()
+
+
+def test_calculator_load_history_error(clear_history):
+    """Testing the history loading error of calculator"""
+    with open(Calculator.HISTORY_FILE_PATH, "a", encoding="UTF-8") as file:
+        file.write("4,5;unknown;0.05;2021-12-12T22:07:18.775121\n")
+    with pytest.raises(Exception):
+        Calculator.load_history()

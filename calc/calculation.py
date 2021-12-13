@@ -1,4 +1,3 @@
-from re import M
 from typing import Tuple
 from datetime import datetime
 
@@ -19,12 +18,7 @@ class Calculation:
 
     def to_str(self):
         data = self.to_dict()
-        return "{};{};{};{}".format(
-            data["operated_values"],
-            data["operation"],
-            data["result"],
-            data["operation_time"],
-        )
+        return f'{data["operated_values"]};{data["operation"]};{data["result"]};{data["operation_time"]}'
 
     def to_dict(self):
         return {

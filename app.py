@@ -52,7 +52,7 @@ def calculator_post():
         elif operation == "division":
             Calculator.divide_numbers(values)
         else:
-            raise Exception("unsupported operation type: {}".format(operation))
+            raise Exception(f"unsupported operation type: {operation}")
 
         return render_template(
             "result.html",
@@ -66,8 +66,8 @@ def calculator_post():
                 )
             ],
         )
-    except Exception as e:
-        flash(str(e))
+    except Exception as error:
+        flash(str(error))
         return render_template("calculator.html")
 
 
