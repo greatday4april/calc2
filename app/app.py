@@ -69,8 +69,3 @@ def calculator_post():
     except Exception as e:
         flash(str(e))
         return render_template("calculator.html")
-
-
-if __name__ == "__main__":
-    app.debug = True
-    app.run()
