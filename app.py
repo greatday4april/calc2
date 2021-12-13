@@ -157,3 +157,10 @@ def sop_get():
     return render_template(
         "article.html", title="Pylint and best practices", content=items
     )
+
+
+@app.route("/flash/")
+def dashboard():
+    flash("Now you should be able to use flash to pass a dismissable message")
+    flash("This is the dismissable message")
+    return render_template("flash.html")
