@@ -157,6 +157,3 @@ def sop_get():
     return render_template(
         "article.html", title="Pylint and best practices", content=items
     )
-
-
-app.run()
