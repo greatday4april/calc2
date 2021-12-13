@@ -1,0 +1,44 @@
+#navbar {
+  margin-left: 10px;
+}
+#footer {
+  text-align: center;
+}
+#calculatorForm {
+  margin: 10px;
+}
+#submit {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#field {
+  margin-bottom: 10px;
+}
+#calculatorContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+#data {
+  margin: 10px;
+}
+#hero {
+  margin-top: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+#result {
+  text-align: center;
+}
+#resultTitle {
+  text-align: center;
+  margin: 20px;
+}

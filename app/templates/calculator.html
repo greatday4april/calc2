@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Simple Calculator Webapp{% endblock %}
+{% block content %}
+
+<div id="calculatorContainer">
+  <h1>Calculator App</h1>
+
+  <form class="col g-3" action="/calculator" method="POST" id="calculatorForm">
+    <div class="row-md-4" id="field">
+      <label for="validationDefault01" class="form-label">Values (use "," to separate multiple float numbers, e.g.
+        "1,2.3")</label>
+      <input name="values" type="text" class="form-control" id="validationDefault01" value="1"
+        pattern="^(\s*-?\d+(\.\d+)?)(\s*,\s*-?\d+(\.\d+)?)*$" required>
+    </div>
+    <div class="row-md-3" id="field">
+      <label for="validationDefault04" class="form-label">Operation</label>
+      <select name="operation" class="form-select" id="validationDefault04" required>
+        <option selected>Addition</option>
+        <option>Subtraction</option>
+        <option>Multiplication</option>
+        <option>Division</option>
+      </select>
+    </div>
+    <div class="col-12" id="submit">
+      <button class="btn btn-primary" type="submit">Calculate!</button>
+    </div>
+  </form>
+</div>
+{% endblock %}

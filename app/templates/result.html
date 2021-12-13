@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if calculation %}
+<h1 id="resultTitle">calculation result</h1>
+<h2 id="result">{{ calculation.result }}</h2>
+{% endif %}
+{% if history %}
+<table id="data" class="table table-striped">
+  <thead>
+    <tr>
+      <th>Values</th>
+      <th>Operation</th>
+      <th>Result</th>
+      <th>Calculation Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for calculation in history %}
+    <tr>
+      <td>{{ calculation.operated_values }}</td>
+      <td>{{ calculation.operation }}</td>
+      <td>{{ calculation.result }}</td>
+      <td>{{ calculation.operation_time }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% else %}
+<h1>No calculations</h1>
+{% endif %}
+{% endblock %}
+
+{% block scripts %}
+<script>
+  $(document).ready(function () {
+    $('#data').DataTable({
+      "order": [[4, "desc"]]
+    });
+  });
+</script>
+{% endblock %}
