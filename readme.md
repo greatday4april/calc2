@@ -8,31 +8,20 @@ To run tests, Lint, and Coverage report use this command:
 
 pytest  --pylint --cov
 
-.pylintrc is the config for pylint
-.coveragerc is the config for coverage
-setup.py is a config file for pytest
+## Link to the website
+
+https://jl239helloworld.azurewebsites.net/
+
+## pylint and test coverage
+
+<img width="894" alt="Screen Shot 2021-12-12 at 10 11 10 PM" src="https://user-images.githubusercontent.com/60717299/145763951-fbbf7312-5936-4342-8365-25593e703ac6.png">
+
+## Calculator app and other pages
 
 
-## Main Test
+<img width="770" alt="Screen Shot 2021-12-12 at 10 34 31 PM" src="https://user-images.githubusercontent.com/60717299/145764136-aa697a5f-7a28-41f5-bbde-ed9a5fe7882c.png">
 
-Read from CSV file and perform test:
-<img width="967" alt="Screen Shot 2021-12-01 at 11 45 55 AM" src="https://user-images.githubusercontent.com/60717299/144320118-7192fde3-c4a5-435d-90f8-f2f813d06fec.png">
-
-## Results Log
-
-<img width="895" alt="Screen Shot 2021-12-01 at 11 50 25 AM" src="https://user-images.githubusercontent.com/60717299/144320156-3c590c46-5837-4661-b44a-fcc165eb158f.png">
-
-
-## Error Log
-
-<img width="1057" alt="Screen Shot 2021-12-01 at 11 50 30 AM" src="https://user-images.githubusercontent.com/60717299/144320178-4df43bbc-fb21-4d18-b6b8-1e4338b61bc4.png">
-
-
-## File moved to done folder after finish
-
-<img width="494" alt="Screen Shot 2021-12-01 at 11 52 17 AM" src="https://user-images.githubusercontent.com/60717299/144320377-ecd1b76d-9b97-497d-a7d8-63056c054bfc.png">
-
-## pylint and code coverage
-
-<img width="1065" alt="Screen Shot 2021-12-07 at 7 31 51 PM" src="https://user-images.githubusercontent.com/60717299/145144344-03dc0448-dc9f-4131-96b3-97484a1ea275.png">
-
+<img width="610" alt="Screen Shot 2021-12-12 at 10 34 40 PM" src="https://user-images.githubusercontent.com/60717299/145764142-6d199108-018f-4f0d-80ad-ce0670bfe424.png">
+<img width="532" alt="Screen Shot 2021-12-12 at 10 34 55 PM" src="https://user-images.githubusercontent.com/60717299/145764149-1daced18-b374-4197-9453-edfa797e0936.png">
+<img width="1271" alt="Screen Shot 2021-12-12 at 10 35 03 PM" src="https://user-images.githubusercontent.com/60717299/145764156-5888bf8d-d044-469f-a164-dc116e247012.png">
+<img width="1280" alt="Screen Shot 2021-12-12 at 10 35 11 PM" src="https://user-images.githubusercontent.com/60717299/145764160-cd49125c-1abb-434c-a6bf-fd1b805e52c0.png">
