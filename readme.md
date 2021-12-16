@@ -10,7 +10,7 @@ pytest  --pylint --cov
 
 ## Link to the website
 
-https://jl239helloworld.azurewebsites.net/
+https://jl239helloworld.azurewebsites.net/calculator
 
 ## pylint and test coverage
 
